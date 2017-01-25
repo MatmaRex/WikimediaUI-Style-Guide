@@ -7,8 +7,8 @@
 <xsl:output method="xml" version="1.0" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.1//EN" doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" indent="yes"/>
 
 <!-- save the dictionary is a variable, so we can access it later -->
-<xsl:variable name="dict" select="/dict" />
-<xsl:variable name="page" select="/dict/@page" />
+<xsl:variable name="dict" select="/xhtml:dict" />
+<xsl:variable name="page" select="/xhtml:dict/@page" />
 
 <!-- replace the dictionary document with the real document -->
 <xsl:template match="/">
@@ -20,7 +20,7 @@
 <xsl:template match="//node()[contains(concat(' ', normalize-space(@class), ' '), ' translate ')]">
   <!-- determine the key, and find the translated text for the key -->
   <xsl:variable name="key" select="@id" />
-  <xsl:variable name="contents" select="$dict//item[@key=$key]" />
+  <xsl:variable name="contents" select="$dict//xhtml:item[@key=$key]" />
   <!-- copy the node... -->
   <xsl:copy>
     <!-- ...with original attributes... -->

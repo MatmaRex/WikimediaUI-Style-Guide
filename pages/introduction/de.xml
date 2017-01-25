@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../../xsl/wmui-style-guide.xsl"?>
 <!DOCTYPE dict>
-<dict page="introduction" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<dict page="introduction" xmlns="http://www.w3.org/1999/xhtml">
 <item key="introduction-heading">
 Einführung
 </item>
@@ -12,7 +12,7 @@ Wikimedia ist eine globale Bewegung, die von einem vielfältigen Publikum gebaut
 Dieses Handbuch bietet eine allgemeine Gestaltungsrichtung, die für verschiedene Arten von interaktiven Projekten nützlich sein kann. Designer und Entwickler finden Design-Empfehlungen, um allgemeine Probleme zu lösen, so dass sie sich auf die spezifischen Bedürfnisse ihrer Projekte konzentrieren können.
 </item>
 <item key="introduction-3">
-Dies ist eine laufende Arbeit, können Sie immer online <xhtml:a href="https://wikimedia.github.io/WikimediaUI-Style-Guide/">die neueste Version des Führers zu überprüfen</xhtml:a>. Sie können dazu beitragen, dass es wachsen.
+Dies ist eine laufende Arbeit, können Sie immer online <a href="https://wikimedia.github.io/WikimediaUI-Style-Guide/">die neueste Version des Führers zu überprüfen</a>. Sie können dazu beitragen, dass es wachsen.
 </item>
 <item key="introduction-contribute-heading">
 Wie man beiträgt
@@ -24,16 +24,16 @@ Sie können auf vielfältige Weise teilnehmen. Die Dokumentation ist in einem Gi
 Das Design-Repository erhalten
 </item>
 <item key="introduction-contribute-getting-1">
-Das <xhtml:a href="https://github.com/wikimedia/WikimediaUI-Style-Guide/">WikimediaUI Style Guide-Repository steht zum Download zur Verfügung</xhtml:a>. Es enthält diese Dokumentation, Vorlagen und weitere Designressourcen. Wählen Sie den "Klon oder Download" -Taste, um das Repository zu erhalten.
+Das <a href="https://github.com/wikimedia/WikimediaUI-Style-Guide/">WikimediaUI Style Guide-Repository steht zum Download zur Verfügung</a>. Es enthält diese Dokumentation, Vorlagen und weitere Designressourcen. Wählen Sie den "Klon oder Download" -Taste, um das Repository zu erhalten.
 </item>
 <item key="introduction-contribute-committing-heading">
 Änderungen vornehmen
 </item>
 <item key="introduction-contribute-committing-1">
-Wenn Sie <xhtml:a href="https://en.wikipedia.org/wiki/Git">Git</xhtml:a> auf Ihrem System installiert haben, ist das <xhtml:a href="https://help.github.com/articles/cloning-a-repository/">Klonen</xhtml:a> bevorzugt, um den Inhalt zu erhalten, da es Ihnen ermöglicht, zurückzugeben. Technisch Änderungen können wie gewohnt in Git eingereicht werden.
+Wenn Sie <a href="https://en.wikipedia.org/wiki/Git">Git</a> auf Ihrem System installiert haben, ist das <a href="https://help.github.com/articles/cloning-a-repository/">Klonen</a> bevorzugt, um den Inhalt zu erhalten, da es Ihnen ermöglicht, zurückzugeben. Technisch Änderungen können wie gewohnt in Git eingereicht werden.
 </item>
 <item key="introduction-contribute-committing-2">
-Um die aktualisierten Inhalte live zu veröffentlichen, gehen Sie in das Repo und starten den folgenden Befehl von einem Terminal: <xhtml:code>git push -f origin master:gh-pages</xhtml:code>
+Um die aktualisierten Inhalte live zu veröffentlichen, gehen Sie in das Repo und starten den folgenden Befehl von einem Terminal: <code>git push -f origin master:gh-pages</code>
 </item>
 <item key="introduction-contribute-beyond-heading">
 Änderungen über den Inhalt hinaus
@@ -42,8 +42,8 @@ Um die aktualisierten Inhalte live zu veröffentlichen, gehen Sie in das Repo un
 Mit den obigen Anweisungen können Sie leicht den Inhalt der Richtlinien ändern, indem Sie neue Empfehlungen hinzufügen, Korrekturen machen oder Beispiele in Form von Bildern oder Videos hinzufügen. Darüber hinaus können Sie auch helfen, zu verbessern, wie diese Dokumentation aussieht und funktioniert.
 </item>
 <item key="introduction-contribute-beyond-2">
-Wenn Sie Aspekte wie das CSS-Design ändern, müssen Sie die Dokumentationsdateien mithilfe von <xhtml:a href="http://gruntjs.com/">Grunt</xhtml:a> neu erstellen (was <xhtml:a href="https://docs.npmjs.com/getting-started/installing-node">Node.js und npm</xhtml:a> erfordert). Das erste Mal müssen Sie <xhtml:code>npm install</xhtml:code> in einem Terminal aus dem Leitfaden Hauptordner, um alle benötigten Abhängigkeiten zu erhalten. Jedes Mal, wenn Sie die CSS-Dateien für die Dokumentation neu erstellen möchten, müssen Sie nur den Befehl <xhtml:code>grunt</xhtml:code> in einem Terminal starten, auch aus dem Hauptordner. 
-Wir verwenden <xhtml:a href="http://stylelint.io/">stylelint</xhtml:a>, um sicherzustellen, dass die CSS <xhtml:a href="https://github.com/wikimedia/stylelint-config-wikimedia/">mit unseren</xhtml:a> <xhtml:a href="https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS">Coding-Konventionen übereinstimmt</xhtml:a>.
+Wenn Sie Aspekte wie das CSS-Design ändern, müssen Sie die Dokumentationsdateien mithilfe von <a href="http://gruntjs.com/">Grunt</a> neu erstellen (was <a href="https://docs.npmjs.com/getting-started/installing-node">Node.js und npm</a> erfordert). Das erste Mal müssen Sie <code>npm install</code> in einem Terminal aus dem Leitfaden Hauptordner, um alle benötigten Abhängigkeiten zu erhalten. Jedes Mal, wenn Sie die CSS-Dateien für die Dokumentation neu erstellen möchten, müssen Sie nur den Befehl <code>grunt</code> in einem Terminal starten, auch aus dem Hauptordner. 
+Wir verwenden <a href="http://stylelint.io/">stylelint</a>, um sicherzustellen, dass die CSS <a href="https://github.com/wikimedia/stylelint-config-wikimedia/">mit unseren</a> <a href="https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS">Coding-Konventionen übereinstimmt</a>.
 </item>
 <item key="introduction-contribute-beyond-3">
 Dies sind Voraussetzungen, um unseren Mitarbeitern eine zuverlässige Umgebung zu bieten und unseren Zuschauern eine performante Erfahrung zu bieten.
