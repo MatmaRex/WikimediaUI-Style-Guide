@@ -15,11 +15,10 @@
   <xsl:apply-templates select="document( concat('../pages/', $page, '/index.xhtml') )/*"/>
 </xsl:template>
 
-<!-- insert translated text into nodes with class="translate" etc. -->
-<!-- (there is no simple selector for searching space-separated attribute values) -->
-<xsl:template match="//node()[contains(concat(' ', normalize-space(@class), ' '), ' translate ')]">
+<!-- insert translated text into nodes with a 'data-i18n' attribute -->
+<xsl:template match="//node()[@data-i18n]">
   <!-- determine the key, and find the translated text for the key -->
-  <xsl:variable name="key" select="@id" />
+  <xsl:variable name="key" select="@data-i18n" />
   <xsl:variable name="contents" select="$dict//xhtml:item[@key=$key]" />
   <!-- copy the node... -->
   <xsl:copy>
